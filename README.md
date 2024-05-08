@@ -65,10 +65,8 @@ np.reciprocal(df['Moderate Negative Skew'])
 np.sqrt(df['Highly Positive Skew'])
 np.square(df['Highly Positive Skew'])
 df['Highly Positive skew_boxcox'],parameters=stats.boxcox(df['Highly Positive Skew'])
-df
 df.skew()
 df['Moderate Negative Skwe_yeojohnson'],parameters=stats.yeojohnson(df['Moderate Negative Skew'])
-df
 df.skew()
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -79,7 +77,6 @@ plt.show()
 sn.qqplot(df['Highly Negative Skew'],line='45')
 plt.show()
 sn.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
-plt.show()
 ~~~
 ## OUTPUT:
 ![321273041-de4abe46-97f3-40f5-9bca-3edabfe5d0cc](https://github.com/RuchitraThiyagaraj/EXNO-3-DS/assets/154776996/25f1a30c-c38f-40d1-a7e7-53fd22f4d409)
