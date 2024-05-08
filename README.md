@@ -1,5 +1,4 @@
 ## EXNO-3-DS
-
 # AIM:
 To read the given data and perform Feature Encoding and Transformation process and save the data to a file.
 # ALGORITHM:
@@ -17,7 +16,6 @@ Label encoding is a simple and straight forward approach. This converts each val
 Binary encoding converts a category into binary digits. Each binary digit creates one feature column. If there are n unique categories, then binary encoding results in the only log(base 2)ⁿ features.
 4. One Hot Encoding
 We use this categorical data encoding technique when the features are nominal(do not have any order). In one hot encoding, for each level of a categorical feature, we create a new variable. Each category is mapped with a binary variable containing either 0 or 1. Here, 0 represents the absence, and 1 represents the presence of that category.
-
 # Methods Used for Data Transformation:
   # 1. FUNCTION TRANSFORMATION
 • Log Transformation
@@ -27,7 +25,6 @@ We use this categorical data encoding technique when the features are nominal(do
   # 2. POWER TRANSFORMATION
 • Boxcox method
 • Yeojohnson method
-
 # CODING AND OUTPUT:
 ~~~
 import pandas as pd
@@ -61,13 +58,6 @@ new=te.fit_transform(X=cc['City'],y=cc['Target'])
 cc=pd.concat([cc,new],axis=1)
 import pandas as pd
 df=pd.read_csv("/content/Data_to_Transform.csv")
-df
-df.head()
-df.tail()
-df.shape
-df.info()
-df.describe()
-df.skew()
 import numpy as np
 from scipy import stats
 np.log(df['Highly Positive Skew'])
